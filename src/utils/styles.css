@@ -1,0 +1,61 @@
+ /* Carousel styling */
+ #introCarousel,
+ .carousel-inner,
+ .carousel-item,
+ .carousel-item.active {
+   height: 100vh;
+ }
+
+ #navbar-main {
+   z-index: 2000;
+ }
+
+ .carousel-item:nth-child(1) {
+   background-image: url('../assets/church.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+ }
+
+ .carousel-item:nth-child(2) {
+   background-image: url('../assets/mountain.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+ }
+
+ .carousel-item:nth-child(3) {
+   background-image: url('../assets/beach.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+ }
+
+ /* Height for devices larger than 576px */
+ @media (min-width: 992px) {
+   #introCarousel {
+     margin-top: -58.59px;
+   }
+ }
+
+ .navbar .nav-link {
+   color: #fff !important;
+ }
+
+ #about-mask {
+   background-color: rgba(251, 251, 251, 0.15);
+ }
+
+ #carousel-mask-1 {
+   background-color: rgba(0, 0, 0, 0.6);
+ }
+
+ #carousel-mask-2 {
+   background-color: rgba(0, 0, 0, 0.3);
+ }
+
+ #carousel-mask-3 {
+   background: linear-gradient(45deg,
+       rgba(29, 236, 197, 0.7),
+       rgba(91, 14, 214, 0.7) 100%);
+ }
