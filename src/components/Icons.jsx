@@ -6,7 +6,7 @@ function Icons({href, classes}) {
       <a className="nav-link"
         href={href}
         rel="nofollow"
-        target="_blank">
+        target="_blank" style={{color: "gray"}}>
         <i className={classes}></i>
       </a>
     </li>

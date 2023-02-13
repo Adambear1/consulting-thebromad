@@ -1,11 +1,11 @@
 import React from 'react'
 
-function FormInput({name, info, placeholder}) {
+function FormInput({name, info, placeholder, type}) {
   return (
     <div className="row">
-      <div className="col-6">
+      <div className="col-md-6 col-12">
         <div className="form-outline m-3">
-          <input type="text"
+          <input type={type}
           placeholder={placeholder}
             id={
               name.replace(/ /g, "").toLowerCase()
@@ -18,8 +18,8 @@ function FormInput({name, info, placeholder}) {
             {name}</label>
         </div>
       </div>
-      <div className="col-6 ">
-        <small>{info}</small>
+      <div className="col-md-6 col-12">
+        <small className="text-center center-align">{info}</small>
       </div>
     </div>
   )
